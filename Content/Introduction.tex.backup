@@ -1,0 +1,17 @@
+\chapter{Introduction}
+
+\section{Wireless Sensor Networks}
+
+\section{Background to the study}
+
+\section{Motivation}
+
+\section{Aims and Objectives}
+
+\section{Scope and Limitations}
+{Main focus of our study is to build a energy efficient cross layer communication protocol to communicate raw data from sensor node to Mother Mote (Architecture explained in \ref{architecture}) while preserving energy as much as possible. Therefor facts like security of the data packets will be not covered in this thesis. According to our architecture only Mother Motes are capable of communicate with outer world. Therefor a communication protocol to communicate data between Mother Mote and outer world is needed but our study will not cover that topic.}
+
+{}
+
+\section{Thesis outline}
+

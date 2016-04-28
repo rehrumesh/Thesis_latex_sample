@@ -1,0 +1,38 @@
+\chapter{Design}
+\label{Design}
+
+Sample Equation
+
+Total time for a data cycle can be written as following.
+
+\begin{equation}
+T_{total} = T_{data\_request} + T_{data\_reqply} + T_{sleep\_delay}
+\end{equation} 
+
+
+Sample Algorithm
+\begin{algorithm}[H]
+\caption{Protocol 1 - Mother Mote}\label{algoProto1MM}
+\begin{algorithmic}[1]
+\Procedure{MotherMote}{}
+	\While{TRUE}
+	\For {$ \forall  \textit{nodeId} \in \textit{NodeList}$}
+		\State \Call{BroadcastReadingRequest}{$nodeId$}
+		\While{\textit{$channelIsClear$} \& $listenTime \leq$ BACKOFF\_TIME }
+			\State $listen$
+		\EndWhile
+		
+		\If{ $listenTime > $ BACKOFF\_TIME}
+			\State continue
+		\EndIf
+		
+		
+		
+
+	\EndFor
+	\EndWhile
+	
+\EndProcedure
+
+\end{algorithmic}
+\end{algorithm}

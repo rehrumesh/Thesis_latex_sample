@@ -1,0 +1,67 @@
+\chapter{Background}
+\label{Background}
+% Data communication in wireless networks
+% MAC Protocols
+% Tree diagram /for MAC Types
+% Synchronous & Async /protocols
+% Describe about existing mac /protocols
+
+% Describe about cross layer protocols
+% CL -MAC, MAC-CROSS
+
+% Transmit Only protocol
+\section{section}
+
+Add background details.
+
+
+
+\begin{figure}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.7\linewidth]{Images/b}
+  \caption{First image}
+  \label{fig:risub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.7\linewidth]{Images/Research}
+  \caption{Image two}
+  \label{fig:risub2}
+\end{subfigure}
+\caption Image set
+\label{fig:rimacoverview}
+\end{figure}
+
+
+
+This is a sample table.
+
+\begin{table}[]
+\centering
+\caption{MAC Protocol comparison}
+\label{mac-comparison-table}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lllll}
+\hline
+Name          & Implemented         & Applications                                                 & Synch. requirement & Overhead                                \\ \hline
+S-MAC         & Hardware            & Event-driven, long idle periods, delay order of message time & Loose              & RTS, CTS, ACK, SYNC                     \\
+B-MAC         & Simulation/hardware & Delay tolerant                                               & None               & Preamble                                \\
+PW-MAC        & Hardware            & Low delay, long idle periods                                 & None               & Beacon                                  \\
+LEACH         & Simulation          & Periodic data collection and monitoring                      & Tight              & ADV, Join-Req, schedule                 \\
+Pedamacs      & Simulation          & Delay bounded                                                & Tight              & RTS, CTS, ACK, Synch, topology learning \\
+PRIMA         & Simulation          & Different QoS                                                & Tight              & Synch, Schedule, CH election            \\
+IEEE 802.11   & Simulation/hardware & High data rates, large energy source, smart terminals        & None               & RTS, CTS, ACK                           \\
+IEEE 802.15.1 & Simulation/hardware & Medium to low data rates, low-energy consumption             & Tight              & Synch transmissions, S, C               \\
+IEEE 802.15.4 & Simulation/hardware & Medium to low data rates, low-energy consumption             & Tight              & Beacon, ACK                             \\
+WirelessHART  & Simulation/hardware & Process automation                                           & Tight              & Synch, schedule, routing, other         \\
+ISA100a       & Simulation/hardware & Process automation                                           & Tight              & Synch, schedule, routing,               \\ \hline
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+
+
+
+

@@ -1,0 +1,9 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+
+\author{R. E. Hapuarachchi}
+\title{A Data Delivery Protocol for Extremely Resource Constrained Wireless Sensors}
+
+\begin{document}
+\include{Content/Title_Page}
+\end{document}

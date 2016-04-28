@@ -1,0 +1,102 @@
+% Author Rumesh Eranga Hapuarachchi
+
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[nopostdot,nonumberlist,acronym,section]{glossaries}
+\usepackage[left=4cm,right=2.5cm,top=3cm,bottom=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage[nottoc]{tocbibind} 
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{makeidx}
+\usepackage{multirow} %for table multi rows
+\usepackage{adjustbox} %for resizing tables to fit in page width
+\usepackage[numbers]{natbib} %for citing authors of a paper
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{natbib}
+
+
+\renewcommand\bibname{References}
+
+
+\author{R. E. Hapuarachchi}
+\title{Thesis Title}
+\makeglossaries
+
+
+\newacronym{acc}{ACC}{Acronym }
+\newacronym{qos}{QoS}{Quality of Service}
+\newacronym{rom}{ROM}{Read Only Memory}
+\newacronym{ram}{RAM}{Random Access Memory}
+\newacronym{ip}{IP}{Internet Protocol}
+
+
+\begin{document}
+
+\include{Content/CoverPage}
+\clearpage
+
+
+\include{Content/Title_Page}
+\clearpage
+
+\pagenumbering{roman}
+
+\include{Content/Declaration}
+\addcontentsline{toc}{chapter}{Declaration}
+\clearpage
+
+\include{Content/Dedication}
+\clearpage
+
+\include{Content/Acknowledgement}
+\addcontentsline{toc}{chapter}{Acknowledgment}
+\clearpage
+
+\include{Content/Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\clearpage
+
+{\newgeometry{top=33mm}
+\tableofcontents
+\addcontentsline{toc}{chapter}{Contents}
+\clearpage
+
+\listoffigures
+\clearpage
+
+\listoftables
+\clearpage
+
+\printglossary[type=\acronymtype] 
+\addcontentsline{toc}{chapter}{List Of Acronyms}
+\clearpage
+
+\listofalgorithms
+\addcontentsline{toc}{chapter}{List of Algorithms}
+\clearpage
+
+\pagenumbering{arabic}
+\include{Content/Introduction}
+\clearpage
+
+\include{Content/Background}
+\clearpage
+
+\include{Content/Architecture}
+\clearpage
+
+\include{Content/Implementation}
+\clearpage
+
+\include{Content/Evaluation}
+\clearpage
+
+\include{Content/Conclusion} 
+\clearpage
+
+
+\bibliography{Content/References}
+\bibliographystyle{ieeetr}
+\end{document}
